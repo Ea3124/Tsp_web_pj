@@ -1,0 +1,22 @@
+/* styles.css 또는 해당하는 CSS 파일 */
+.shadow-text {
+    position: relative;
+    color: white;
+    font-size: 75px;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+.shadow-text::after {
+    content: 'TOP SPIN'; /* 원하는 텍스트 */
+    position: absolute;
+    left: 5px; /* 음영 텍스트의 위치 조정 */
+    top: 5px; /* 음영 텍스트의 위치 조정 */
+    color: rgba(0, 0, 0, 0.25); /* 음영 텍스트의 색상과 투명도 */
+    z-index: -1; /* 원본 텍스트 뒤에 위치하도록 설정 */
+    transform: scale(0.95); /* 음영 텍스트를 약간 축소 */
+  }
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
